@@ -33,18 +33,14 @@
 				border:5px solid black;
 				display:flex;
 				justify-content:centre;
-				color:white;
-				background-color:rgb(1, 52, 64);
 				width:32%;
 				border-radius:10px;
 				flex-direction:column;
 			}
 			.visualization{
 				border:5px solid black;
-				display:flex;
+				display;flex;
 				justify-content:centre;
-				color:white;
-				background-color:rgb(1, 52, 64);
 				width:32%;
 				border-radius:10px;
 				flex-direction:column;
@@ -53,8 +49,6 @@
 				border:5px solid black;
 				display:flex;
 				justify-content:centre;
-				color:white;
-				background-color:rgb(1, 52, 64);
 				width:32%;
 				border-radius:10px;
 				flex-direction:column;
@@ -67,6 +61,106 @@
 				color:white;
 				text-decoration:none;
 			}
+			.heading1{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+			}
+			.heading2{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+			}
+			.heading3{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+			}
+			.pandas{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+			}
+			.dash{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+			}
+			.datetime{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+			}
+			.os{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+			}
+			.matplotlib{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+			}
+			.plotly{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+			}
+			.home{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+				height:30px;
+				width:30px;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+			}
+			.hobbies{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+				height:30px;
+				width:30px;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+			}
+			.home:hover{
+				background-color:black;
+			}
+			.hobbies:hover{
+				background-color:black;
+			}
+			.pandas:hover{
+				background-color:black;
+			}
+			.matplotlib:hover{
+				background-color:black;
+			}
+			.datetime:hover{
+				background-color:black;
+			}
+			.os:hover{
+				background-color:black;
+			}
+			.dash:hover{
+				background-color:black;
+			}
+			.plotly:hover{
+				background-color:black;
+			}					
 		</style>
 	</head>
 	<body>
@@ -77,7 +171,10 @@
 		</div>
 		<div class="content1">
 			<div class='analysis'>
+				<div class="heading1">
 				<h1>DATA ANALYSIS</h1>
+				</div>
+				<div class="pandas">		
 				<ul>
 					<li>pandas</li>
 				</ul>
@@ -86,9 +183,27 @@
 				  which are designed to make working with structured data easy and intuitive.<br>
 				  Pandas is built on top of NumPy and is widely used in data science, machine learning,<br>
 				  and other fields that require data processing. </p>
+				</div>
+				<div class="datetime">
+				<ul>
+					<li>date time</li>
+				</ul>
+				<p>Date and time libraries provide the fundamental building blocks for managing dates and times in software.<br>
+				  They offer classes and functions for representing, manipulating, and comparing dates and times, including arithmetic operations and time zone handling.<br>
+				  These libraries are crucial for tasks like scheduling, data analysis, and system operations, and they often include features for formatting, parsing, and converting date and time values. </p>
+				</div>
+				<div class="os">
+				<ul>
+					<li>os</li>
+				</ul>
+				<p>An OS library, like the os module in Python, provides functions for interacting with the operating system, allowing programs to manage files, directories, processes, and other OS-level tasks.<br>
+				  These libraries often serve as an interface between applications and the underlying operating system kernel. </p>
+				</div>	
 			</div>
 			<div class="visualization">
-				<h1>DATA VISUALIZATION</h1>
+				<div class="heading2">
+				<h1>DATA VISUALIZATION</h1></div>
+				<div class="matplotlib">
 				<ul>
 					<li>matplotlib</li>
 				</ul>
@@ -96,19 +211,29 @@
 				  It provides a wide range of functionalities for visualizing data in various formats, making it an essential tool for data analysis and exploration.<br>
 				  It is built upon NumPy and is designed to work well with the SciPy stack.<br>
 				  Matplotlib can be used in Python scripts, IPython shells, web application servers, and various GUI toolkits. </p>
+				</div>
+				<div class="plotly">
+				<ul>
+					<li>plotly</li>
+				</ul>
+				<p>Plotly is a free, open-source Python library for creating interactive and publication-quality visualizations.<br>
+				  It offers a wide range of chart types, including 2D and 3D plots, statistical graphs, financial charts, and more, all powered by the Plotly.js JavaScript library.<br>
+				  Plotly can be used to create various types of visualizations, including line plots, scatter plots, bar charts, pie charts, and 3D graphs. </p>
 			</div>
 			<div class="dashboard">
-				<h1>DASH BOARD </h1>
+				<div class=heading3"><h1>DASH BOARD </h1></div>
+				<div class="dash">
 				<ul>
 					<li>dash</li>
 				</ul>
 				<p>Dash is a Python library that simplifies building web applications, particularly those focused on data visualization and analytics.<br>
 				  It allows developers to create interactive web dashboards and data apps using pure Python, without the need for extensive front-end development knowledge.<br>
 				  Dash leverages libraries like React.js, Flask, and Plotly.js to create a user-friendly and powerful framework. </p>
+				</div>
 			</div>
 		</div>
-		<a class="a1" href="index.html">"back to home"</a>
-		<a class="a2"href="hobbies.html">"see hobbies"</a>
+		<div class="home"><a class="a1" href="index.html">BACK TO HOME</a></div>
+		<div class='hobbies"><a class="a2"href="hobbies.html">SEE HOBBIES</a></div>
 		</div>
 	</body>
 </html>
