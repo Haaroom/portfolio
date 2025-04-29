@@ -1,161 +1,263 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Skills</title>
-    <style>
-        body {
-            background-color: black;
-            margin: 0;
-            padding: 0;
-        }
-
-        .main {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            width: 100%;
-        }
-
-        .upper {
-            background-color: black;
-            color: white;
-            font-size: 20px;
-            height: 50px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 10px;
-        }
-
-        .img {
-            background-color: black;
-            height: 40px;
-            width: 40px;
-        }
-
-        .content1 {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 2%;
-            padding: 20px;
-        }
-
-        .analysis, .visualization, .dashboard {
-            border: 5px solid black;
-            border-radius: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            width: 30%;
-            height: auto;
-            background-color: rgb(1, 52, 64);
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        .heading1, .heading2, .heading3 {
-            color: white;
-            border: 5px solid black;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 90%;
-            padding: 10px;
-            margin-bottom: 10px;
-            font-size: 22px;
-        }
-
-        .pandas, .dash, .datetime, .os, .matplotlib, .plotly,
-        .home, .hobbies {
-            background-color: rgb(1, 52, 64);
-            color: white;
-            border: 5px solid black;
-            border-radius: 10px;
-            font-size: 16px;
-            padding: 5px 10px;
-            margin: 5px;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .home, .hobbies {
-            height: 30px;
-            width: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Hover styles */
-        .pandas:hover, .dash:hover, .datetime:hover,
-        .os:hover, .matplotlib:hover, .plotly:hover,
-        .home:hover, .hobbies:hover {
-            background-color: black;
-        }
-
-        .a1, .a2 {
-            color: white;
-            text-decoration: none;
-        }
-
-        p {
-            color: white;
-            text-align: justify;
-            font-size: 14px;
-            line-height: 1.5;
-            margin: 10px 0;
-            padding: 0 5px;
-        }
-    </style>
-</head>
-<body>
-    <div class="main">
-        <div class="upper">
-            <h1>PYTHON</h1>
-            <img class="img" src="..." />
-        </div>
-
-        <div class="content1">
-            <div class="analysis">
-                <div class="heading1">Analysis</div>
-                <div class="pandas">Pandas</div>
-                <div class="datetime">Datetime</div>
-                <div class="os">OS</div>
-                <p>
-                    Data analysis involves inspecting, cleansing, transforming, and modeling data to discover useful information and support decision-making. 
-                    Python libraries such as <strong>Pandas</strong> and <strong>Datetime</strong> provide powerful tools to handle and analyze structured data, 
-                    while <strong>OS</strong> helps interact with the operating system to manage files and directories.
-                </p>
-            </div>
-
-            <div class="visualization">
-                <div class="heading2">Visualization</div>
-                <div class="matplotlib">Matplotlib</div>
-                <div class="plotly">Plotly</div>
-                <p>
-                    Data visualization is the graphical representation of data to help stakeholders understand complex patterns and trends.
-                    Libraries like <strong>Matplotlib</strong> offer static plotting, while <strong>Plotly</strong> provides interactive charts 
-                    that bring data to life.
-                </p>
-            </div>
-
-            <div class="dashboard">
-                <div class="heading3">Dashboard</div>
-                <div class="dash">Dash</div>
-                <div class="home">Home</div>
-                <div class="hobbies">Hobbies</div>
-                <p>
-                    Dashboards present data insights in a unified visual interface. Using Python's <strong>Dash</strong> framework,
-                    we can build responsive web applications with interactive components to monitor KPIs, trends, and user input effectively.
-                </p>
-            </div>
-        </div>
-    </div>
-</body>
+	<head>
+		<meta charset='UTF-8'>
+		<title>skills</title>
+		<style>
+			body{
+				background-color:black;
+			}
+			.main{
+				display:flex;
+				flex-direction:column;
+				height:100%;
+				width:100%;
+			}
+			.upper{
+				background-color:black;
+				color:white;
+				font-size:20px;
+				height:50px;
+				width:100%;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				matgin:10px;
+			}
+			.img{
+				background-color:black;
+				height:40px;
+				width:40px;
+			}
+			.content1{
+				display:flex;
+				flex-direction:row;
+			}
+			.analysis{
+				border:5px solid black;
+				display:flex;
+				justify-content:center;
+				width:32%;
+				border-radius:20px;
+				flex-direction:column;
+				height:500px;
+			}
+			.visualization{
+				border:5px solid black;
+				display:flex;
+				justify-content:center;
+				width:32%;
+				border-radius:20px;
+				flex-direction:column;
+				height:500px;
+			}
+			.dashboard{
+				border:5px solid black;
+				display:flex;
+				justify-content:center;
+				width:32%;
+				border-radius:20px;
+				flex-direction:column;
+				height:500px;
+			}
+			.a1{
+				color:white;
+				text-decoration:none;
+			}
+			.a2{
+				color:white;
+				text-decoration:none;
+			}
+			.heading1{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+			}
+			.heading2{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+			}
+			.heading3{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+			}
+			.pandas{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+				font-size:16px;
+			}
+			.dash{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+				font-size:16px;
+			}
+			.datetime{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+				font-size:16px;
+			}
+			.os{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+				font-size:16px;
+			}
+			.matplotlib{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+				font-size:16px;
+			}
+			.plotly{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+				font-size:16px;
+			}
+			.home{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+				height:30px;
+				width:100px;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+			}
+			.hobbies{
+				background-color:rgb(1, 52, 64);
+				color:white;
+				border:5px solid black;
+				border-radius:10px;
+				height:30px;
+				width:100px;
+				display:flex;
+				align-items:center;
+				justify-content:center;
+			}
+			.home:hover{
+				background-color:black;
+			}
+			.hobbies:hover{
+				background-color:black;
+			}
+			.pandas:hover{
+				background-color:black;
+			}
+			.matplotlib:hover{
+				background-color:black;
+			}
+			.datetime:hover{
+				background-color:black;
+			}
+			.os:hover{
+				background-color:black;
+			}
+			.dash:hover{
+				background-color:black;
+			}
+			.plotly:hover{
+				background-color:black;
+			}					
+		</style>
+	</head>
+	<body>
+		<div class="main">
+		<div class="upper">
+			<h1>PYTHON</h1>
+			<img class="img" src="data:image/png;base64,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">
+		</div>
+		<div class="content1">
+			<div class='analysis'>
+				<div class="heading1">
+				<h1>DATA ANALYSIS</h1>
+				</div>
+				<div class="pandas">		
+				<ul>
+					<li>pandas</li>
+				</ul>
+				<p>Pandas is a Python library used for data manipulation and analysis.<br>
+				  It provides data structures like DataFrames and Series,<br>
+				  which are designed to make working with structured data easy and intuitive.<br>
+				  Pandas is built on top of NumPy and is widely used in data science, machine learning,<br>
+				  and other fields that require data processing. </p>
+				</div>
+				<div class="datetime">
+				<ul>
+					<li>date time</li>
+				</ul>
+				<p>Date and time libraries provide the fundamental building blocks for managing dates and times in software.<br>
+				  They offer classes and functions for representing, manipulating, and comparing dates and times, including arithmetic operations and time zone handling.<br>
+				  These libraries are crucial for tasks like scheduling, data analysis, and system operations, and they often include features for formatting, parsing, and converting date and time values. </p>
+				</div>
+				<div class="os">
+				<ul>
+					<li>os</li>
+				</ul>
+				<p>An OS library, like the os module in Python, provides functions for interacting with the operating system, allowing programs to manage files, directories, processes, and other OS-level tasks.<br>
+				  These libraries often serve as an interface between applications and the underlying operating system kernel. </p>
+				</div>	
+			</div>
+			<div class="visualization">
+				<div class="heading2">
+				<h1>DATA VISUALIZATION</h1></div>
+				<div class="matplotlib">
+				<ul>
+					<li>matplotlib</li>
+				</ul>
+				<p>Matplotlib is a Python library used for creating static, animated, and interactive visualizations.<br>
+				  It provides a wide range of functionalities for visualizing data in various formats, making it an essential tool for data analysis and exploration.<br>
+				  It is built upon NumPy and is designed to work well with the SciPy stack.<br>
+				  Matplotlib can be used in Python scripts, IPython shells, web application servers, and various GUI toolkits. </p>
+				</div>
+				<div class="plotly">
+				<ul>
+					<li>plotly</li>
+				</ul>
+				<p>Plotly is a free, open-source Python library for creating interactive and publication-quality visualizations.<br>
+				  It offers a wide range of chart types, including 2D and 3D plots, statistical graphs, financial charts, and more, all powered by the Plotly.js JavaScript library.<br>
+				  Plotly can be used to create various types of visualizations, including line plots, scatter plots, bar charts, pie charts, and 3D graphs. </p>
+			        </div>
+			</div>
+			<div class="dashboard">
+				<div class="heading3"><h1> DASH BOARD </h1></div>
+				<div class="dash">
+				<ul>
+					<li>dash</li>
+				</ul>
+				<p>Dash is a Python library that simplifies building web applications, particularly those focused on data visualization and analytics.<br>
+				  It allows developers to create interactive web dashboards and data apps using pure Python, without the need for extensive front-end development knowledge.<br>
+				  Dash leverages libraries like React.js, Flask, and Plotly.js to create a user-friendly and powerful framework. </p>
+				</div>
+			</div>
+		</div>
+		<div class="a">
+		       <div class="home"><a class="a1" href="index.html">BACK TO HOME</a></div>
+		       <div class="hobbies"><a class="a2"href="hobbies.html">SEE HOBBIES</a></div>
+	        </div>
+	     </div>
+     </body>
 </html>
