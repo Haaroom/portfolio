@@ -1,135 +1,161 @@
-</html>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset='UTF-8'>
-	<title>skills</title>
-	<style>
-		body {
-			background-color: black;
-			margin: 0;
-			padding: 0;
-		}
+    <meta charset="UTF-8">
+    <title>Skills</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
 
-		.main {
-			display: flex;
-			flex-direction: column;
-			min-height: 100vh;
-			width: 100%;
-		}
+        .main {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            width: 100%;
+        }
 
-		.upper {
-			background-color: black;
-			color: white;
-			font-size: 20px;
-			height: 50px;
-			width: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin: 10px;
-		}
+        .upper {
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
 
-		.img {
-			background-color: black;
-			height: 40px;
-			width: 40px;
-		}
+        .img {
+            background-color: black;
+            height: 40px;
+            width: 40px;
+        }
 
-		.content1 {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			gap: 2%;
-			padding: 20px;
-		}
+        .content1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 2%;
+            padding: 20px;
+        }
 
-		.analysis, .visualization, .dashboard {
-			border: 5px solid black;
-			border-radius: 20px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			width: 30%;
-			height: 500px;
-			background-color: rgb(1, 52, 64);
-		}
+        .analysis, .visualization, .dashboard {
+            border: 5px solid black;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 30%;
+            height: auto;
+            background-color: rgb(1, 52, 64);
+            padding: 20px;
+            box-sizing: border-box;
+        }
 
-		.heading1, .heading2, .heading3 {
-			color: white;
-			border: 5px solid black;
-			border-radius: 10px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			width: 90%;
-			padding: 10px;
-			margin-bottom: 10px;
-		}
+        .heading1, .heading2, .heading3 {
+            color: white;
+            border: 5px solid black;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
 
-		.pandas, .dash, .datetime, .os, .matplotlib, .plotly,
-		.home, .hobbies {
-			background-color: rgb(1, 52, 64);
-			color: white;
-			border: 5px solid black;
-			border-radius: 10px;
-			font-size: 16px;
-			padding: 5px 10px;
-			margin: 5px;
-			text-align: center;
-			cursor: pointer;
-		}
+        .pandas, .dash, .datetime, .os, .matplotlib, .plotly,
+        .home, .hobbies {
+            background-color: rgb(1, 52, 64);
+            color: white;
+            border: 5px solid black;
+            border-radius: 10px;
+            font-size: 16px;
+            padding: 5px 10px;
+            margin: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
 
-		.home, .hobbies {
-			height: 30px;
-			width: 100px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
+        .home, .hobbies {
+            height: 30px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-		.pandas:hover, .dash:hover, .datetime:hover,
-		.os:hover, .matplotlib:hover, .plotly:hover,
-		.home:hover, .hobbies:hover {
-			background-color: black;
-		}
+        /* Hover styles */
+        .pandas:hover, .dash:hover, .datetime:hover,
+        .os:hover, .matplotlib:hover, .plotly:hover,
+        .home:hover, .hobbies:hover {
+            background-color: black;
+        }
 
-		.a1, .a2 {
-			color: white;
-			text-decoration: none;
-		}
-	</style>
+        .a1, .a2 {
+            color: white;
+            text-decoration: none;
+        }
+
+        p {
+            color: white;
+            text-align: justify;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 10px 0;
+            padding: 0 5px;
+        }
+    </style>
 </head>
 <body>
-	<div class="main">
-		<div class="upper">
-			<h1>PYTHON</h1>
-			<img class="img" src="..." />
-		</div>
+    <div class="main">
+        <div class="upper">
+            <h1>PYTHON</h1>
+            <img class="img" src="..." />
+        </div>
 
-		<div class="content1">
-			<div class="analysis">
-				<div class="heading1">Analysis</div>
-				<div class="pandas">Pandas</div>
-				<div class="datetime">Datetime</div>
-				<div class="os">OS</div>
-			</div>
+        <div class="content1">
+            <div class="analysis">
+                <div class="heading1">Analysis</div>
+                <div class="pandas">Pandas</div>
+                <div class="datetime">Datetime</div>
+                <div class="os">OS</div>
+                <p>
+                    Data analysis involves inspecting, cleansing, transforming, and modeling data to discover useful information and support decision-making. 
+                    Python libraries such as <strong>Pandas</strong> and <strong>Datetime</strong> provide powerful tools to handle and analyze structured data, 
+                    while <strong>OS</strong> helps interact with the operating system to manage files and directories.
+                </p>
+            </div>
 
-			<div class="visualization">
-				<div class="heading2">Visualization</div>
-				<div class="matplotlib">Matplotlib</div>
-				<div class="plotly">Plotly</div>
-			</div>
+            <div class="visualization">
+                <div class="heading2">Visualization</div>
+                <div class="matplotlib">Matplotlib</div>
+                <div class="plotly">Plotly</div>
+                <p>
+                    Data visualization is the graphical representation of data to help stakeholders understand complex patterns and trends.
+                    Libraries like <strong>Matplotlib</strong> offer static plotting, while <strong>Plotly</strong> provides interactive charts 
+                    that bring data to life.
+                </p>
+            </div>
 
-			<div class="dashboard">
-				<div class="heading3">Dashboard</div>
-				<div class="dash">Dash</div>
-				<div class="home">Home</div>
-				<div class="hobbies">Hobbies</div>
-			</div>
-		</div>
-	</div>
+            <div class="dashboard">
+                <div class="heading3">Dashboard</div>
+                <div class="dash">Dash</div>
+                <div class="home">Home</div>
+                <div class="hobbies">Hobbies</div>
+                <p>
+                    Dashboards present data insights in a unified visual interface. Using Python's <strong>Dash</strong> framework,
+                    we can build responsive web applications with interactive components to monitor KPIs, trends, and user input effectively.
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
