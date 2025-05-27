@@ -2,87 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Developer Portfolio</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    :root {
+      --bg: #0f1117;
+      --card: #1e222d;
+      --primary: #00bfff;
+      --text: #e0e0e0;
+      --accent: #19ff8c;
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
-      color: #333;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 2rem;
       line-height: 1.6;
     }
+
     header {
-      background: #007acc;
-      color: white;
-      padding: 1rem 2rem;
       text-align: center;
+      margin-bottom: 2rem;
     }
+
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      color: var(--accent);
     }
-    nav {
-      margin-top: 10px;
-    }
+
     nav a {
-      color: white;
+      color: var(--primary);
+      margin: 0 10px;
       text-decoration: none;
-      margin: 0 15px;
       font-weight: bold;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
-    main {
+
+    section {
       max-width: 900px;
       margin: 2rem auto;
-      padding: 0 1rem;
+      padding: 1.5rem;
+      background: var(--card);
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 255, 255, 0.05);
     }
-    section {
-      margin-bottom: 2.5rem;
-    }
+
     h2 {
-      border-bottom: 2px solid #007acc;
-      padding-bottom: 0.3rem;
+      color: var(--primary);
       margin-bottom: 1rem;
-      color: #007acc;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+
+    .project {
+      margin-bottom: 1.5rem;
     }
-    ul li {
-      background: #e0f0ff;
-      margin-bottom: 0.6rem;
-      padding: 0.6rem 1rem;
+
+    .code-toggle {
+      margin-top: 0.8rem;
+      background: var(--primary);
+      color: #000;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
       border-radius: 5px;
     }
-    .project {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
+
+    .code-block {
+      background: #11151c;
       padding: 1rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+      margin-top: 0.5rem;
+      display: none;
+      border-radius: 5px;
+      overflow-x: auto;
+      font-family: monospace;
+      color: #7fffd4;
     }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #007acc;
-      color: white;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-    a.contact-link {
-      color: #007acc;
+
+    .contact a {
+      color: var(--accent);
       text-decoration: none;
-      font-weight: bold;
     }
-    a.contact-link:hover {
+
+    .contact a:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+      header h1 {
+        font-size: 2.2rem;
+      }
     }
   </style>
 </head>
@@ -98,58 +118,84 @@
   </nav>
 </header>
 
-<main>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a passionate software developer skilled in multiple programming languages and data science tools. I love building practical applications, solving algorithmic challenges, and creating interactive data visualizations.</p>
-  </section>
+<section id="about">
+  <h2>About Me</h2>
+  <p>I’m a multi-skilled developer focused on web development, data science, and software engineering. I build creative projects, analyze data, and automate processes with clean, efficient code.</p>
+</section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Programming Languages:</strong> JavaScript, Java, Python</li>
-      <li><strong>Web Development:</strong> HTML5, CSS3, JavaScript (DOM, events)</li>
-      <li><strong>Data Science & Visualization:</strong> NumPy, Pandas, Matplotlib, Plotly, Dash</li>
-      <li><strong>Databases:</strong> SQL (SQLite), query writing, transactions, integration with Python</li>
-      <li><strong>Algorithms & Data Structures:</strong> Arrays, strings, searching, linked lists, problem solving</li>
-    </ul>
-  </section>
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Languages: Python, Java, JavaScript</li>
+    <li>Web: HTML5, CSS3, JS DOM, APIs</li>
+    <li>Libraries: NumPy, Pandas, Matplotlib, Plotly, Dash</li>
+    <li>Databases: SQLite with SQL and Python integration</li>
+    <li>Tools: Git, VS Code, Jupyter, Terminal</li>
+  </ul>
+</section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+<section id="projects">
+  <h2>Projects</h2>
 
-    <div class="project">
-      <h3>Smart School Analytics System</h3>
-      <p><strong>Technologies:</strong> Python, Dash, SQLite, Pandas, Plotly</p>
-      <p>Multi-page dashboard for managing students and teachers data, marks entry, attendance, and analytics with interactive visualizations and reports export.</p>
-    </div>
+  <div class="project">
+    <h3>Smart School Analytics System</h3>
+    <p>Multi-page Dash dashboard for managing student data and analytics.</p>
+    <button class="code-toggle">Show Code</button>
+    <pre class="code-block"># Dash-based smart school system
+import dash
+import pandas as pd
+import sqlite3
+# Layout code + callback logic here
+    </pre>
+  </div>
 
-    <div class="project">
-      <h3>Restaurant Landing Page</h3>
-      <p><strong>Technologies:</strong> HTML, CSS</p>
-      <p>Responsive one-page restaurant landing website designed for UI/UX practice with semantic HTML and CSS styling including hover effects.</p>
-    </div>
+  <div class="project">
+    <h3>Recipe Search Website</h3>
+    <p>JavaScript-based app fetching recipes from a public API.</p>
+    <button class="code-toggle">Show Code</button>
+    <pre class="code-block">// Fetch and display recipes
+fetch('https://www.themealdb.com/api/json/v1/1/search.php?s=chicken')
+  .then(res => res.json())
+  .then(data => console.log(data));
+    </pre>
+  </div>
 
-    <div class="project">
-      <h3>Recipe Search Website (In Progress)</h3>
-      <p><strong>Technologies:</strong> JavaScript, Public Recipe APIs</p>
-      <p>Web app to search and display recipes from public APIs focusing on asynchronous JavaScript and dynamic UI updates.</p>
-    </div>
+  <div class="project">
+    <h3>Restaurant Landing Page</h3>
+    <p>Responsive one-page site using HTML + CSS.</p>
+    <button class="code-toggle">Show Code</button>
+    <pre class="code-block">&lt;section&gt;
+  &lt;h1&gt;Welcome to Foodie &lt;/h1&gt;
+  &lt;p&gt;Best meals served hot!&lt;/p&gt;
+&lt;/section&gt;
+    </pre>
+  </div>
+</section>
 
-  </section>
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+  <p>GitHub: <a href="https://github.com/yourname" target="_blank">github.com/yourname</a></p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+</section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Feel free to reach out!</p>
-    <p>Email: <a href="mailto:your.email@example.com" class="contact-link">your.email@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/your-github" target="_blank" class="contact-link">github.com/your-github</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/your-linkedin" target="_blank" class="contact-link">linkedin.com/in/your-linkedin</a></p>
-  </section>
-</main>
+<script>
+  const toggles = document.querySelectorAll(".code-toggle");
+  const codes = document.querySelectorAll(".code-block");
 
-<footer>
-  &copy; 2025 Your Name
-</footer>
+  toggles.forEach((btn, idx) => {
+    btn.addEventListener("click", () => {
+      const code = codes[idx];
+      if (code.style.display === "block") {
+        code.style.display = "none";
+        btn.textContent = "Show Code";
+      } else {
+        code.style.display = "block";
+        btn.textContent = "Hide Code";
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
